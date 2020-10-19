@@ -14,7 +14,7 @@ USE_GITHUB=	yes
 #GH_ACCOUNT=	CopernicaMarketingSoftware
 GH_ACCOUNT=	lattera
 GH_PROJECT=	PHP-CPP
-GH_COMMIT=	6ad4dff76a56a6be9ad6feed6fcc0b4534769e25
+GH_COMMIT=	21f04a5007d649abd7151e137a5ad69eed326da7
 GH_TAGNAME=	${GH_COMMIT}
 
 do-build:
@@ -23,6 +23,8 @@ do-build:
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/include/phpcpp
 	(cd ${WRKSRC}/include && \
+	    ${COPYTREE_SHARE} \*.h ${STAGEDIR}${PREFIX}/include/phpcpp)
+	(cd ${WRKSRC}/ && \
 	    ${COPYTREE_SHARE} \*.h ${STAGEDIR}${PREFIX}/include/phpcpp)
 	${INSTALL_LIB} ${WRKSRC}/obj/libphpcpp.[sa]* ${STAGEDIR}${PREFIX}/lib
 	${LN} -sf libphpcpp.so.${PORTVERSION} ${STAGEDIR}${PREFIX}/lib/libphpcpp.so

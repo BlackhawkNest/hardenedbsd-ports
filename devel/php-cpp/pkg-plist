@@ -30,6 +30,7 @@ include/phpcpp/namespace.h
 include/phpcpp/noexcept.h
 include/phpcpp/object.h
 include/phpcpp/parameters.h
+include/phpcpp/phpcpp.h
 include/phpcpp/platform.h
 include/phpcpp/script.h
 include/phpcpp/serializable.h
