@@ -49,6 +49,6 @@ include/phpcpp/zendcallable.h
 include/phpcpp/zval.h
 lib/libphpcpp.so
 lib/libphpcpp.so.2.2
-lib/libphpcpp.so.2.2.1
-lib/libphpcpp.so.2.2.1.debug
-lib/libphpcpp.so.2.2.1.full
+lib/libphpcpp.so.2.2.0
+lib/libphpcpp.so.2.2.0.debug
+lib/libphpcpp.so.2.2.0.full
